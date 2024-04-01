@@ -2,7 +2,7 @@
 
 # Social Risk Sentinel
 
-## Suicidal Ideation Detection In Online Social Content
+## Chat-Bot to detect Suicidal Ideation
 
 <img src="Assets/web.gif" > 
 </div>
