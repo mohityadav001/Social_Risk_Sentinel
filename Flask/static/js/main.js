@@ -1,7 +1,7 @@
 let time = new Date();
 let hour = time.getHours();
 let minute = time.getMinutes();
-const url = "https://ai-for-social-good.herokuapp.com";
+const url = "https://Social_Risk_Sentinel.herokuapp.com";
 $(".set-time").text(`${hour}:${minute}`);
 
 function getPredictions(text) {
@@ -22,16 +22,16 @@ function getPredictions(text) {
       let outputMsg = "";
 
       if (ml_pred == "1" && dl_pred == "1") {
-        outputMsg = "Message is a suicide ideation";
+        outputMsg = "Suicide ideation message";
       } else if (ml_pred == "0" && dl_pred == "0") {
-        outputMsg = "Mesage is not realted to suicide ideation";
+        outputMsg = "Message is not suicide ideation";
       } else if (
         (ml_pred == "0" && dl_pred == "1") ||
         (ml_pred == "1" && dl_pred == "0")
       ) {
         outputMsg = "Mesage may be or may not be related suicide ideation";
       } else {
-        outputMsg = "Sorry, Unable to understand";
+        outputMsg = "I don't understand";
       }
 
       $("#new-res").append(`
