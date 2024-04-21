@@ -4,7 +4,7 @@
 
 ## Chat-Bot to detect Suicidal Ideation
 
-<img src="Assets/web.gif" > 
+<!-- <img src="Assets/web.gif" >  -->
 </div>
 
 ## Introduction
@@ -21,10 +21,6 @@ I gathered data from two different sources: Reddit and Twitter. In the Reddit da
 - Utilized both Bag of Words and TFIDF Vectorizer for vectorization.
 - Employed grid search CV to identify optimal parameters for training the model with Random Forest Classifier, achieving an accuracy of 96%.
 - Trained the model using Multilayer Bidirectional LSTM with GLOBE embedding, resulting in an accuracy of 97%.
-
-## Results
-
-Results of different methods applied
 
 ## Usage
 
