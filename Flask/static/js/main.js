@@ -22,7 +22,7 @@ function getPredictions(text) {
       let outputMsg = "";
 
       if (ml_pred == "1" && dl_pred == "1") {
-        outputMsg = "Suicide ideation message";
+        outputMsg = "Suicide ideation detected";
       } else if (ml_pred == "0" && dl_pred == "0") {
         outputMsg = "Message is not suicide ideation";
       } else if (
