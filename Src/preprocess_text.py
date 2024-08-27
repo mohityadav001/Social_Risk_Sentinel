@@ -5,8 +5,8 @@ from nltk.stem import WordNetLemmatizer
 sp = spacy.load('en_core_web_sm')
 all_stopwords = sp.Defaults.stop_words
 
-new_words = ["http", "www", "co", "u", "com", "t", "s", "m",
-             "ve", "dy", "ll", 'n', 'r', 'b', "wa", "y", "don", "ha"]
+new_words = ["http", "www", "co",'r', 'b', "wa", "u", "com", "t", "s", "m",
+             "ve", "dy", "ll", 'n', "y", "don", "ha"]
 for words in new_words:
     all_stopwords.add(words)
 
